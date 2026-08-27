@@ -1,0 +1,5 @@
+# Local agent and verification state
+/.memory/
+/.verify/
+
+# Runtime output belongs outside this umbrella repository.
