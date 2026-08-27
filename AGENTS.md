@@ -8,6 +8,8 @@
 - Register every member directly below one numbered category named
   `<NN>_u-<category>/`. A category is an ordinary umbrella-owned directory, not
   a repository or a Cell.
+- The template standardizes that category form, not a global taxonomy. Each
+  downstream umbrella owns its category vocabulary, ordering, and boundaries.
 - Never infer a Cell from membership or category placement. A Cell exists only
   inside a member repository where a local `comsect1.json` declares it.
 - Before changing member content, enter that repository and read its own

@@ -4,7 +4,7 @@ These files govern the umbrella repository itself. They do not override a
 member repository's local instructions, Cell authority, history, or license.
 
 - [member-repository-boundary.md](./member-repository-boundary.md): umbrella/member authority separation
-- [classification.md](./classification.md): numbered category and repository taxonomy
+- [classification.md](./classification.md): numbered category form and local classification authority
 - [membership.md](./membership.md): `.gitmodules` and gitlink authority
 - [branches.md](./branches.md): umbrella and member branch separation
 - [verification.md](./verification.md): non-Gate umbrella verification
