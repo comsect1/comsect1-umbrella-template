@@ -13,6 +13,7 @@ member repository's local instructions, Cell authority, history, or license.
 - [fork-adoption.md](./fork-adoption.md): identity, category, and upstream adoption
 - [licensing-policy.md](./licensing-policy.md): scaffold and member license boundaries
 - [refactoring-and-updates.md](./refactoring-and-updates.md): member publication and gitlink update workflow
+- [text-format-policy.md](./text-format-policy.md): umbrella-owned UTF-8/LF bytes, verification, and explicit correction
 - [templates/CATEGORY_README.md](./templates/CATEGORY_README.md): category boundary template
 
 These are operational instructions, not Comsect1 Specification or Gate law.

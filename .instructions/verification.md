@@ -10,6 +10,8 @@ For every umbrella change:
 6. Report dirty and uninitialized members without changing them.
 7. Confirm all local instruction links resolve.
 8. Confirm no umbrella-only change modified member content or licensing.
+9. Run `.instructions/text-format.ps1` and require a canonical UTF-8/LF
+   umbrella worktree before publication.
 
 This assesses the umbrella index. It is not a Gate run and cannot aggregate or
 reinterpret member Cell verdicts.

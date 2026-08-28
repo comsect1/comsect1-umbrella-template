@@ -24,6 +24,9 @@
   `90_temps/`, or `99_trash/` in an umbrella.
 - Do not store implementation, build output, Gate evidence, Forge journals,
   release packages, or member copies in the umbrella index.
+- Umbrella-owned text follows [the text-format policy](./.instructions/text-format-policy.md).
+  The policy does not propagate through gitlinks; each member requires its own
+  repository-root policy.
 
 ## Member operations
 
@@ -50,3 +53,4 @@
 - [Fork adoption](./.instructions/fork-adoption.md)
 - [Licensing policy](./.instructions/licensing-policy.md)
 - [Refactoring and updates](./.instructions/refactoring-and-updates.md)
+- [Text format policy](./.instructions/text-format-policy.md)

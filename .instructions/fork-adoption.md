@@ -11,3 +11,6 @@
 6. Confirm no unit-repository scaffold was introduced at the umbrella root.
 7. Confirm every member retains independent history, instructions, Cell
    authority, license, and notice.
+8. Retain the root `.gitattributes` and `.editorconfig`, configure umbrella
+   generators for LF, and run `.instructions/text-format.ps1 -Apply` once
+   before the first publication.
