@@ -40,6 +40,23 @@
 - Forge authority remains member-local. An umbrella progress event or Gate
   finding never grants authority to modify a member.
 
+## Version and compatibility invariants
+
+- The committed gitlink is the umbrella's member snapshot authority. Do not
+  invent, mirror, rewrite, or infer a member product version from category names,
+  paths, branches, work revisions, or umbrella metadata.
+- Do not use `legacy`, `old`, `v1`/`v2`, `r{n}`, or similar labels to create
+  parallel categories, duplicate membership, compatibility aliases, or pin
+  selection logic. An `r{n}` umbrella work revision is non-semantic traceability
+  only.
+- Replace obsolete umbrella structure completely. Do not preserve unreleased or
+  temporary umbrella layouts through aliases, redirects, shims, or parallel
+  membership paths.
+- Release and compatibility authority remains member-local. The umbrella may
+  record a published member release but must not create or extend its contract.
+- Apply the full [version and compatibility policy](./.instructions/version-and-compatibility.md)
+  during umbrella and member-pin updates.
+
 ## Routed instructions
 
 - [Instruction index](./.instructions/README.md)
@@ -53,4 +70,5 @@
 - [Fork adoption](./.instructions/fork-adoption.md)
 - [Licensing policy](./.instructions/licensing-policy.md)
 - [Refactoring and updates](./.instructions/refactoring-and-updates.md)
+- [Version and compatibility](./.instructions/version-and-compatibility.md)
 - [Text format policy](./.instructions/text-format-policy.md)
