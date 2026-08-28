@@ -22,3 +22,6 @@ pwsh -File .instructions/text-format.ps1 -Apply
 
 Correction is limited to tracked LF-policy text, is not staged, and never
 touches `-text` files or member content.
+
+Strict UTF-8 validation rejects undecodable tracked text. `-Apply` never
+guesses or silently transcodes a source encoding; conversion requires review.
