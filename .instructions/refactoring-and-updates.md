@@ -11,6 +11,11 @@ duplicate gitlinks, aliases, redirects, parallel pins, or `legacy`/`v1`/`v2`
 paths to preserve an unreleased or temporary layout. Umbrella `r{n}` work
 revisions are record-only and must not select structure or member snapshots.
 
+Classify durable guidance discovered during a refactor. Template-wide umbrella
+rules remain common; subtype rules belong in `.instructions/kind/`; downstream
+umbrella-specific vocabulary and integration constraints belong in
+`.instructions/local/`. Never copy member-local guidance into the umbrella.
+
 ## Member changes
 
 1. Establish separate authority in the member repository.

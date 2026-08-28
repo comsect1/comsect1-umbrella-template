@@ -57,6 +57,23 @@
 - Apply the full [version and compatibility policy](./.instructions/version-and-compatibility.md)
   during umbrella and member-pin updates.
 
+## Instruction ownership and precedence
+
+- Root `.instructions/*.md` files supplied by this template are common umbrella
+  instructions and may be updated by template synchronization.
+- `.instructions/kind/` is the downstream-owned umbrella-kind layer. Record the
+  umbrella subtype and durable guidance shared by that kind there.
+- `.instructions/local/` is the downstream-owned repository-local layer. Put
+  durable umbrella-specific classification vocabulary, integration constraints,
+  and operating guidance there; template synchronization must never overwrite it.
+- Member-local instructions remain inside each member and are never absorbed by
+  an umbrella `local` layer. Task-only authority remains in separately owned
+  work records and is not a durable instruction by default.
+- Kind and local guidance may narrow or strengthen common rules but may not
+  weaken common invariants or member authority.
+- Apply the full [instruction layers policy](./.instructions/instruction-layers.md)
+  whenever umbrella instructions are created, promoted, or synchronized.
+
 ## Routed instructions
 
 - [Instruction index](./.instructions/README.md)
@@ -71,4 +88,7 @@
 - [Licensing policy](./.instructions/licensing-policy.md)
 - [Refactoring and updates](./.instructions/refactoring-and-updates.md)
 - [Version and compatibility](./.instructions/version-and-compatibility.md)
+- [Instruction layers](./.instructions/instruction-layers.md)
+- [Umbrella-kind instructions](./.instructions/kind/README.md)
+- [Umbrella-local instructions](./.instructions/local/README.md)
 - [Text format policy](./.instructions/text-format-policy.md)
