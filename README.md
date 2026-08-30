@@ -14,6 +14,28 @@ transformation without rewriting member licenses.
 
 See [AGENTS.md](./AGENTS.md) and the [instruction index](./.instructions/README.md).
 
+## Gate-to-Forge execution kernel
+
+```text
+Cell root and comsect1.json
+-> complete immutable runtime inventory
+-> language AST and binding
+-> normalized proven observations
+-> current Gate issues with exact AUTO_FIX candidates and direct rework IDs
+-> selected AUTO_FIX: ephemeral exact plan -> apply -> same-Gate result
+-> no selected mutation: initial Gate result remains current
+-> current direct REWORK IDs labeled by --ai-rework on|off
+```
+
+The umbrella root has no Cell verdict. For each selected member Cell, run
+`comsect1-gate check --root <cell>`. Gate and Audit remain read-only. Within
+that member repository's own authority, run
+`comsect1-forge fix --root <cell> --ai-rework <on|off>` when Gate identifies
+the correction flow. Forge applies exact mechanical candidates without
+approval, reruns the same Gate, and only labels remaining direct rework IDs; it
+never launches AI. The umbrella retains only its locally shaped
+`<NN>_u-<category>` groups and never acquires unit project roots.
+
 ## Author and governance
 
 - Creator and principal architect: Kim Hyeongjeong ([@comsect1](https://github.com/comsect1))
