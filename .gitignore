@@ -2,4 +2,20 @@
 /.memory/
 /.verify/
 
+# Build artifacts and leaked objects
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.bin
+*.ilk
+*.pdb
+
+# Ad-hoc debug directories and scratch scripts
+_*
+/90_temps/
+/99_trash/
+
 # Runtime output belongs outside this umbrella repository.
+

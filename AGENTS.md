@@ -28,6 +28,23 @@
   The policy does not propagate through gitlinks; each member requires its own
   repository-root policy.
 
+## Strict Prohibitions
+
+- **NO ROOT BUILDS OR COMPILER INVOCATIONS**: Never execute build tools (`gcc`,
+  `clang`, `cmake`, `ninja`, `cargo`, `iar`, etc.) directly in the umbrella root,
+  category directories, or parent repos directory. All builds belong inside
+  their dedicated unit build directories or external runner workspaces. Never
+  emit `.o`, `.obj`, `.a`, `.lib`, `.exe`, or `.bin` into an umbrella directory.
+- **NO WORKTREES OR CLONES IN UMBRELLA ROOTS**: Never run `git worktree add` or
+  arbitrary `git clone` commands inside an umbrella directory or adjacent to
+  registered member paths. Worktrees must be established only in officially
+  designated external workspaces, never inside the working tree.
+- **NO ROOT TEMPORARY SCRIPTS OR ARTIFACTS**: Never place ad-hoc scripts (e.g.
+  `*.ps1`, `*.sh`, `*.py`), temporary logs, or scratch folders (`_*`, `.verify*`,
+  `*backup*`) in the umbrella root or repos root. All transient diagnostics must
+  reside strictly within designated `90_temps/<class>/<tool>/<run-id>/` paths
+  and must be cleaned up before task completion.
+
 ## Member operations
 
 - Pin only published member commits. Report dirty or uninitialized members and
